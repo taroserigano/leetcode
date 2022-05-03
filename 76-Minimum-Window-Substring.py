@@ -6,8 +6,10 @@ class Solution:
         for c in t:
             countT[c] = 1 + countT.get(c, 0)
         
-        have, need = 0, len(countT)
-        res, resLen = [-1, -1], float("infinity")
+        have = 0
+        need = len(countT)
+        res = [-1, -1] 
+        resLen = float("infinity")
         l = 0
         for r in range(len(s)):
             c = s[r]
